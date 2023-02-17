@@ -1,1 +1,342 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"Country Name":"Algeria","Consumer_Inflation%_1985":10.5,"Consumer_Inflation%_1990":16.7,"Consumer_Inflation%_1995":29.8,"Consumer_Inflation%_2000":0.3,"Consumer_Inflation%_2005":1.4,"Consumer_Inflation%_2010":3.9,"Consumer_Inflation%_2015":4.8,"Consumer_Inflation%_2020":2.4},"geometry":{"type":"Point","coordinates":[3.379277,27.89689]}},{"type":"Feature","properties":{"Country Name":"Australia","Consumer_Inflation%_1985":6.7,"Consumer_Inflation%_1990":7.3,"Consumer_Inflation%_1995":4.6,"Consumer_Inflation%_2000":4.5,"Consumer_Inflation%_2005":2.7,"Consumer_Inflation%_2010":2.9,"Consumer_Inflation%_2015":1.5,"Consumer_Inflation%_2020":0.8},"geometry":{"type":"Point","coordinates":[134.050443,-23.992438]}},{"type":"Feature","properties":{"Country Name":"Brazil","Consumer_Inflation%_1985":226,"Consumer_Inflation%_1990":2947.7,"Consumer_Inflation%_1995":66,"Consumer_Inflation%_2000":7,"Consumer_Inflation%_2005":6.9,"Consumer_Inflation%_2010":5,"Consumer_Inflation%_2015":9,"Consumer_Inflation%_2020":3.2},"geometry":{"type":"Point","coordinates":[-49.542449,-11.928923]}},{"type":"Feature","properties":{"Country Name":"Canada","Consumer_Inflation%_1985":4,"Consumer_Inflation%_1990":4.8,"Consumer_Inflation%_1995":2.1,"Consumer_Inflation%_2000":2.7,"Consumer_Inflation%_2005":2.2,"Consumer_Inflation%_2010":1.8,"Consumer_Inflation%_2015":1.1,"Consumer_Inflation%_2020":0.7},"geometry":{"type":"Point","coordinates":[-112.384858,58.33747]}},{"type":"Feature","properties":{"Country Name":"Chad","Consumer_Inflation%_1985":5.2,"Consumer_Inflation%_1990":-0.7,"Consumer_Inflation%_1995":9.2,"Consumer_Inflation%_2000":3.8,"Consumer_Inflation%_2005":7.9,"Consumer_Inflation%_2010":-2.1,"Consumer_Inflation%_2015":4.4,"Consumer_Inflation%_2020":4.5},"geometry":{"type":"Point","coordinates":[18.76924,15.21002]}},{"type":"Feature","properties":{"Country Name":"Germany","Consumer_Inflation%_1985":2.1,"Consumer_Inflation%_1990":2.7,"Consumer_Inflation%_1995":1.7,"Consumer_Inflation%_2000":1.4,"Consumer_Inflation%_2005":1.5,"Consumer_Inflation%_2010":1.1,"Consumer_Inflation%_2015":0.5,"Consumer_Inflation%_2020":0.5},"geometry":{"type":"Point","coordinates":[9.62743,51.196755]}},{"type":"Feature","properties":{"Country Name":"India","Consumer_Inflation%_1985":5.6,"Consumer_Inflation%_1990":9,"Consumer_Inflation%_1995":10.2,"Consumer_Inflation%_2000":4,"Consumer_Inflation%_2005":4.2,"Consumer_Inflation%_2010":12,"Consumer_Inflation%_2015":4.9,"Consumer_Inflation%_2020":6.6},"geometry":{"type":"Point","coordinates":[79.132924,22.412321]}},{"type":"Feature","properties":{"Country Name":"Indonesia","Consumer_Inflation%_1985":4.7,"Consumer_Inflation%_1990":7.8,"Consumer_Inflation%_1995":9.4,"Consumer_Inflation%_2000":3.7,"Consumer_Inflation%_2005":10.5,"Consumer_Inflation%_2010":5.1,"Consumer_Inflation%_2015":6.4,"Consumer_Inflation%_2020":1.9},"geometry":{"type":"Point","coordinates":[101.972332,-1.003189]}},{"type":"Feature","properties":{"Country Name":"Japan","Consumer_Inflation%_1985":2,"Consumer_Inflation%_1990":3.1,"Consumer_Inflation%_1995":-0.1,"Consumer_Inflation%_2000":-0.7,"Consumer_Inflation%_2005":-0.3,"Consumer_Inflation%_2010":-0.7,"Consumer_Inflation%_2015":0.8,"Consumer_Inflation%_2020":0},"geometry":{"type":"Point","coordinates":[138.441899,36.13793]}},{"type":"Feature","properties":{"Country Name":"Mexico","Consumer_Inflation%_1985":57.7,"Consumer_Inflation%_1990":26.7,"Consumer_Inflation%_1995":35,"Consumer_Inflation%_2000":9.5,"Consumer_Inflation%_2005":4,"Consumer_Inflation%_2010":4.2,"Consumer_Inflation%_2015":2.7,"Consumer_Inflation%_2020":3.4},"geometry":{"type":"Point","coordinates":[-102.289691,23.920061]}},{"type":"Feature","properties":{"Country Name":"Niger","Consumer_Inflation%_1985":-0.9,"Consumer_Inflation%_1990":-0.8,"Consumer_Inflation%_1995":10.6,"Consumer_Inflation%_2000":2.9,"Consumer_Inflation%_2005":7.8,"Consumer_Inflation%_2010":0.8,"Consumer_Inflation%_2015":-0.6,"Consumer_Inflation%_2020":2.9},"geometry":{"type":"Point","coordinates":[9.521564,17.431408]}},{"type":"Feature","properties":{"Country Name":"Peru","Consumer_Inflation%_1985":163.4,"Consumer_Inflation%_1990":7481.7,"Consumer_Inflation%_1995":11.1,"Consumer_Inflation%_2000":3.8,"Consumer_Inflation%_2005":1.6,"Consumer_Inflation%_2010":1.5,"Consumer_Inflation%_2015":3.4,"Consumer_Inflation%_2020":2},"geometry":{"type":"Point","coordinates":[-72.876651,-12.98078]}},{"type":"Feature","properties":{"Country Name":"South Africa","Consumer_Inflation%_1985":16.3,"Consumer_Inflation%_1990":14.3,"Consumer_Inflation%_1995":8.7,"Consumer_Inflation%_2000":5.3,"Consumer_Inflation%_2005":2.1,"Consumer_Inflation%_2010":4.1,"Consumer_Inflation%_2015":4.5,"Consumer_Inflation%_2020":3.2},"geometry":{"type":"Point","coordinates":[23.666291,-29.708985]}},{"type":"Feature","properties":{"Country Name":"Sudan","Consumer_Inflation%_1985":45.4,"Consumer_Inflation%_1990":65.2,"Consumer_Inflation%_1995":68.4,"Consumer_Inflation%_2000":7.1,"Consumer_Inflation%_2005":8.5,"Consumer_Inflation%_2010":13,"Consumer_Inflation%_2015":16.9,"Consumer_Inflation%_2020":150.3},"geometry":{"type":"Point","coordinates":[29.381307,16.34997]}},{"type":"Feature","properties":{"Country Name":"United Kingdom","Consumer_Inflation%_1985":6.1,"Consumer_Inflation%_1990":8.1,"Consumer_Inflation%_1995":2.7,"Consumer_Inflation%_2000":1.2,"Consumer_Inflation%_2005":2.1,"Consumer_Inflation%_2010":2.5,"Consumer_Inflation%_2015":0.4,"Consumer_Inflation%_2020":1},"geometry":{"type":"Point","coordinates":[-1.247349,52.418788]}},{"type":"Feature","properties":{"Country Name":"United States","Consumer_Inflation%_1985":3.5,"Consumer_Inflation%_1990":5.4,"Consumer_Inflation%_1995":2.8,"Consumer_Inflation%_2000":3.4,"Consumer_Inflation%_2005":3.4,"Consumer_Inflation%_2010":1.6,"Consumer_Inflation%_2015":0.1,"Consumer_Inflation%_2020":1.2},"geometry":{"type":"Point","coordinates":[-96.999668,39.715956]}}]}
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "Country Name": "Algeria",
+          "Consumer_Inflation%_1985": 10.5,
+          "Consumer_Inflation%_1990": 16.7,
+          "Consumer_Inflation%_1995": 29.8,
+          "Consumer_Inflation%_2000": 0.3,
+          "Consumer_Inflation%_2005": 1.4,
+          "Consumer_Inflation%_2010": 3.9,
+          "Consumer_Inflation%_2015": 4.8,
+          "Consumer_Inflation%_2020": 2.4
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            3.379277,
+            27.89689
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Country Name": "Australia",
+          "Consumer_Inflation%_1985": 6.7,
+          "Consumer_Inflation%_1990": 7.3,
+          "Consumer_Inflation%_1995": 4.6,
+          "Consumer_Inflation%_2000": 4.5,
+          "Consumer_Inflation%_2005": 2.7,
+          "Consumer_Inflation%_2010": 2.9,
+          "Consumer_Inflation%_2015": 1.5,
+          "Consumer_Inflation%_2020": 0.8
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            134.050443,
+            -23.992438
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Country Name": "Brazil",
+          "Consumer_Inflation%_1985": 226,
+          "Consumer_Inflation%_1990": 2947.7,
+          "Consumer_Inflation%_1995": 66,
+          "Consumer_Inflation%_2000": 7,
+          "Consumer_Inflation%_2005": 6.9,
+          "Consumer_Inflation%_2010": 5,
+          "Consumer_Inflation%_2015": 9,
+          "Consumer_Inflation%_2020": 3.2
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -49.542449,
+            -11.928923
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Country Name": "Canada",
+          "Consumer_Inflation%_1985": 4,
+          "Consumer_Inflation%_1990": 4.8,
+          "Consumer_Inflation%_1995": 2.1,
+          "Consumer_Inflation%_2000": 2.7,
+          "Consumer_Inflation%_2005": 2.2,
+          "Consumer_Inflation%_2010": 1.8,
+          "Consumer_Inflation%_2015": 1.1,
+          "Consumer_Inflation%_2020": 0.7
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -112.384858,
+            58.33747
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Country Name": "Chad",
+          "Consumer_Inflation%_1985": 5.2,
+          "Consumer_Inflation%_1990": -0.7,
+          "Consumer_Inflation%_1995": 9.2,
+          "Consumer_Inflation%_2000": 3.8,
+          "Consumer_Inflation%_2005": 7.9,
+          "Consumer_Inflation%_2010": -2.1,
+          "Consumer_Inflation%_2015": 4.4,
+          "Consumer_Inflation%_2020": 4.5
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            18.76924,
+            15.21002
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Country Name": "Germany",
+          "Consumer_Inflation%_1985": 2.1,
+          "Consumer_Inflation%_1990": 2.7,
+          "Consumer_Inflation%_1995": 1.7,
+          "Consumer_Inflation%_2000": 1.4,
+          "Consumer_Inflation%_2005": 1.5,
+          "Consumer_Inflation%_2010": 1.1,
+          "Consumer_Inflation%_2015": 0.5,
+          "Consumer_Inflation%_2020": 0.5
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            9.62743,
+            51.196755
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Country Name": "India",
+          "Consumer_Inflation%_1985": 5.6,
+          "Consumer_Inflation%_1990": 9,
+          "Consumer_Inflation%_1995": 10.2,
+          "Consumer_Inflation%_2000": 4,
+          "Consumer_Inflation%_2005": 4.2,
+          "Consumer_Inflation%_2010": 12,
+          "Consumer_Inflation%_2015": 4.9,
+          "Consumer_Inflation%_2020": 6.6
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.132924,
+            22.412321
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Country Name": "Indonesia",
+          "Consumer_Inflation%_1985": 4.7,
+          "Consumer_Inflation%_1990": 7.8,
+          "Consumer_Inflation%_1995": 9.4,
+          "Consumer_Inflation%_2000": 3.7,
+          "Consumer_Inflation%_2005": 10.5,
+          "Consumer_Inflation%_2010": 5.1,
+          "Consumer_Inflation%_2015": 6.4,
+          "Consumer_Inflation%_2020": 1.9
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            101.972332,
+            -1.003189
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Country Name": "Japan",
+          "Consumer_Inflation%_1985": 2,
+          "Consumer_Inflation%_1990": 3.1,
+          "Consumer_Inflation%_1995": -0.1,
+          "Consumer_Inflation%_2000": -0.7,
+          "Consumer_Inflation%_2005": -0.3,
+          "Consumer_Inflation%_2010": -0.7,
+          "Consumer_Inflation%_2015": 0.8,
+          "Consumer_Inflation%_2020": 0
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            138.441899,
+            36.13793
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Country Name": "Mexico",
+          "Consumer_Inflation%_1985": 57.7,
+          "Consumer_Inflation%_1990": 26.7,
+          "Consumer_Inflation%_1995": 35,
+          "Consumer_Inflation%_2000": 9.5,
+          "Consumer_Inflation%_2005": 4,
+          "Consumer_Inflation%_2010": 4.2,
+          "Consumer_Inflation%_2015": 2.7,
+          "Consumer_Inflation%_2020": 3.4
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -102.289691,
+            23.920061
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Country Name": "Niger",
+          "Consumer_Inflation%_1985": -0.9,
+          "Consumer_Inflation%_1990": -0.8,
+          "Consumer_Inflation%_1995": 10.6,
+          "Consumer_Inflation%_2000": 2.9,
+          "Consumer_Inflation%_2005": 7.8,
+          "Consumer_Inflation%_2010": 0.8,
+          "Consumer_Inflation%_2015": -0.6,
+          "Consumer_Inflation%_2020": 2.9
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            9.521564,
+            17.431408
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Country Name": "Peru",
+          "Consumer_Inflation%_1985": 163.4,
+          "Consumer_Inflation%_1990": 7481.7,
+          "Consumer_Inflation%_1995": 11.1,
+          "Consumer_Inflation%_2000": 3.8,
+          "Consumer_Inflation%_2005": 1.6,
+          "Consumer_Inflation%_2010": 1.5,
+          "Consumer_Inflation%_2015": 3.4,
+          "Consumer_Inflation%_2020": 2
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.876651,
+            -12.98078
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Country Name": "South Africa",
+          "Consumer_Inflation%_1985": 16.3,
+          "Consumer_Inflation%_1990": 14.3,
+          "Consumer_Inflation%_1995": 8.7,
+          "Consumer_Inflation%_2000": 5.3,
+          "Consumer_Inflation%_2005": 2.1,
+          "Consumer_Inflation%_2010": 4.1,
+          "Consumer_Inflation%_2015": 4.5,
+          "Consumer_Inflation%_2020": 3.2
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            23.666291,
+            -29.708985
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Country Name": "Sudan",
+          "Consumer_Inflation%_1985": 45.4,
+          "Consumer_Inflation%_1990": 65.2,
+          "Consumer_Inflation%_1995": 68.4,
+          "Consumer_Inflation%_2000": 7.1,
+          "Consumer_Inflation%_2005": 8.5,
+          "Consumer_Inflation%_2010": 13,
+          "Consumer_Inflation%_2015": 16.9,
+          "Consumer_Inflation%_2020": 150.3
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            29.381307,
+            16.34997
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Country Name": "United Kingdom",
+          "Consumer_Inflation%_1985": 6.1,
+          "Consumer_Inflation%_1990": 8.1,
+          "Consumer_Inflation%_1995": 2.7,
+          "Consumer_Inflation%_2000": 1.2,
+          "Consumer_Inflation%_2005": 2.1,
+          "Consumer_Inflation%_2010": 2.5,
+          "Consumer_Inflation%_2015": 0.4,
+          "Consumer_Inflation%_2020": 1
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -1.247349,
+            52.418788
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Country Name": "United States",
+          "Consumer_Inflation%_1985": 3.5,
+          "Consumer_Inflation%_1990": 5.4,
+          "Consumer_Inflation%_1995": 2.8,
+          "Consumer_Inflation%_2000": 3.4,
+          "Consumer_Inflation%_2005": 3.4,
+          "Consumer_Inflation%_2010": 1.6,
+          "Consumer_Inflation%_2015": 0.1,
+          "Consumer_Inflation%_2020": 1.2
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -96.999668,
+            39.715956
+          ]
+        }
+      }
+    ]
+  }
+  
