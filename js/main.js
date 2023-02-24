@@ -6,7 +6,7 @@ var minValue
 function createMap(){
     //create the map
     map = L.map('map', {
-        center: [20, 0],
+        center: [22, 0],
         zoom: 2.5
     });
 
@@ -155,60 +155,72 @@ function updatePropSymbols(attribute){
     });
 };
 
-function createSequenceControls(attributes){
-    //create range input element (slider)
+function createSequenceControls(attributes) {
+    // create range input element (slider)
     var slider = "<input class='range-slider' type='range'></input>";
-    document.querySelector('#panel').insertAdjacentHTML('beforeend',slider);
-
-    //set slider attributes
-    document.querySelector('.range-slider').max = 7;
-    document.querySelector('.range-slider').min = 0;
-    document.querySelector('.range-slider').value = 0;
-    document.querySelector('.range-slider').step = 1;
-
-    //add reverse and forward buttons
-    document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="reverse">Reverse</button>');
-    document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="forward">Forward</button>');
-
-    //replace buttons with images
-    document.querySelector('#reverse').insertAdjacentHTML('beforeend',"<img src='img/reverse.png'>")
-    document.querySelector('#forward').insertAdjacentHTML('beforeend',"<img src='img/forward.png'>")
-
-    //click listener for buttons
-    document.querySelectorAll('.step').forEach(function(step){
-        step.addEventListener('click', function(){
-            var index = document.querySelector('.range-slider').value;
-            //increment or decrement depending on button clicked
-            if (step.id == 'forward'){
-                index++;
-                //if past the last attribute, wrap around to first attribute
-                index = index > 7 ? 0 : index;
-            } else if (step.id == 'reverse'){
-                index--;
-                //if past the first attribute, wrap around to last attribute
-                index = index < 0 ? 7 : index;
-            };
-            
-            //update slider
-            document.querySelector('.range-slider').value = index;
-
-            //pass new attribute to update symbols
-            updatePropSymbols(attributes[index]);
-        })
-        
-    })
-
-    //input listener for slider
-    document.querySelector('.range-slider').addEventListener('input', function(){
-        //get the new index value
-        var index = this.value;
-        console.log(index);
-
-        //pass new attribute to update symbols
-        updatePropSymbols(attributes[index]);
+    document.querySelector("#panel").insertAdjacentHTML("beforeend", slider);
+  
+    // set slider attributes
+    document.querySelector(".range-slider").max = 7;
+    document.querySelector(".range-slider").min = 0;
+    document.querySelector(".range-slider").value = 0;
+    document.querySelector(".range-slider").step = 1;
+  
+    // add reverse and forward buttons
+    document.querySelector("#panel").insertAdjacentHTML("beforeend", "<button class='step' id='reverse'>Reverse</button>");
+    document.querySelector("#panel").insertAdjacentHTML("beforeend", "<button class='step' id='forward'>Forward</button>");
+  
+    // replace buttons with images
+    document.querySelector("#reverse").insertAdjacentHTML("beforeend", "<img src='img/reverse.png'>");
+    document.querySelector("#forward").insertAdjacentHTML("beforeend", "<img src='img/forward.png'>");
+  
+    // add year display text box
+    var yearDisplay = document.createElement("div");
+    yearDisplay.id = "year-display";
+    document.querySelector("#panel").appendChild(yearDisplay);
+  
+    // click listener for buttons
+    document.querySelectorAll(".step").forEach(function (step) {
+      step.addEventListener("click", function () {
+        var index = document.querySelector(".range-slider").value;
+        // increment or decrement depending on button clicked
+        if (step.id == "forward") {
+          index++;
+          // if past the last attribute, wrap around to first attribute
+          index = index > 7 ? 0 : index;
+        } else if (step.id == "reverse") {
+          index--;
+          // if past the first attribute, wrap around to last attribute
+          index = index < 0 ? 7 : index;
+        }
+  
+        // update slider
+        document.querySelector(".range-slider").value = index;
+  
+        // pass new attribute to update symbols and year display
+        var attribute = attributes[index];
+        updatePropSymbols(attribute);
+        updateYearDisplay(attribute);
+      });
     });
-}
-
+  
+    // input listener for slider
+    document.querySelector(".range-slider").addEventListener("input", function () {
+      // get the new index value
+      var index = this.value;
+  
+      // pass new attribute to update symbols and year display
+      var attribute = attributes[index];
+      updatePropSymbols(attribute);
+      updateYearDisplay(attribute);
+    });
+  }
+  
+  function updateYearDisplay(attribute) {
+    // extract year from attribute name and update year display text box
+    var year = attribute.split("_")[2];
+    document.querySelector("#year-display").textContent = "Year: " + year;
+  }
 
 //Step 7: Import GeoJSON data
 function getData(){

@@ -1,5 +1,5 @@
 /*Add CSS styles here*/
-#map { height: 400px;
+#map { height: 700px;
        width: 80%;
        display: inline-block;
 }
@@ -25,12 +25,53 @@
 }  
 
 #forward {  
-    float: right;  
+    float: right;
+    width: auto;  
+    max-width: 21%;
+    text-align: center;
 }  
 
 #reverse {  
     float: left;  
+    width: auto;
+    max-width: 21%;
+    text-align: center;
 }
 .leaflet-popup-content p{
     margin: 0.2em 0;
 }
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 1em;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+
+/* CSS for the legend */
+.legend {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  
+  .legend h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .legend .circle {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: #ff7800;
+  }
+  
+  .legend .label {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+  }
