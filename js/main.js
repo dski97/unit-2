@@ -6,14 +6,16 @@ var minValue
 function createMap(){
     //create the map
     map = L.map('map', {
-        center: [22, 0],
-        zoom: 2.5
+        center: [17, 10],
+        zoom: 2.5,
+        scrollWheelZoom: 'center'
     });
 
     //add ARCgis base tilelayer
     L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
         attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
-        maxZoom: 16
+        maxZoom: 8,
+        minZoom: 3
     }).addTo(map);
 
     //call getData function
@@ -215,7 +217,7 @@ function createSequenceControls(attributes) {
       updateYearDisplay(attribute);
     });
   }
-  
+  // update year display text box
   function updateYearDisplay(attribute) {
     // extract year from attribute name and update year display text box
     var year = attribute.split("_")[2];
@@ -234,10 +236,15 @@ function getData(){
             var attributes = processData(json);
             //calculate minimum data value
             minValue = calculateMinValue(json);
+
             //call function to create proportional symbols
             createPropSymbols(json, attributes);
             //call function to create sequence controls
             createSequenceControls(attributes);
+            //update year display for start page
+            updateYearDisplay(attributes[0]);
+            //call function to create legend
+            createLegend(minValue, maxValue);
         })
 };
 

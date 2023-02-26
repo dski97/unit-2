@@ -1,4 +1,15 @@
 /*Add CSS styles here*/
+body
+{
+    background-color: #f6e5e5;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
 #map { height: 700px;
        width: 80%;
        display: inline-block;
@@ -50,28 +61,34 @@ h1 {
   }
 
 /* CSS for the legend */
-.legend {
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid gray;
-  }
-  
-  .legend h4 {
-    margin-top: 0;
-    margin-bottom: 5px;
-  }
-  
-  .legend .circle {
-    display: inline-block;
-    margin-right: 5px;
-    vertical-align: middle;
-    border-radius: 50%;
-    background-color: #ff7800;
-  }
-  
-  .legend .label {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 12px;
-  }
+.legend, .temporal-legend {
+  padding: 6px 10px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+#legendTitle {
+  text-align: center;
+  margin-bottom: 15px;
+  font-variant: small-caps;
+}
+
+.symbolsContainer {
+  float: left;
+  margin-left: 50px;
+}
+
+.legendCircle {
+  border-radius:50%; 
+  border: 1px solid #537898; 
+  background: rgba(113, 133, 152, .6);
+  display: inline-block;
+}
+
+.legendValue {
+  position: absolute;
+  right: 8px;
+}
