@@ -10,17 +10,16 @@ body
     padding: 0;
 }
 
-#map { height: 700px;
+#map { height: 750px;
        width: 80%;
-       display: inline-block;
+       float: left;
 }
 #panel {  
     width: 15%;  
-    padding: 20px;  
-    display: inline-block;  
-    vertical-align: top;  
+    padding: 35px;  
+    float: left; 
     text-align: center;  
-    line-height: 42px;  
+    line-height: 40px;  
 }  
 
 .range-slider {  
@@ -60,35 +59,14 @@ h1 {
     font-family: "Helvetica Neue", Arial, sans-serif;
   }
 
-/* CSS for the legend */
-.legend, .temporal-legend {
-  padding: 6px 10px;
-  font: 14px/16px Arial, Helvetica, sans-serif;
-  background: white;
-  background: rgba(255,255,255,0.8);
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  border-radius: 5px;
-}
-
-#legendTitle {
-  text-align: center;
-  margin-bottom: 15px;
-  font-variant: small-caps;
-}
-
-.symbolsContainer {
-  float: left;
-  margin-left: 50px;
-}
-
-.legendCircle {
-  border-radius:50%; 
-  border: 1px solid #537898; 
-  background: rgba(113, 133, 152, .6);
-  display: inline-block;
-}
-
-.legendValue {
-  position: absolute;
-  right: 8px;
-}
+  #text
+  {
+    text-align: center;
+    font-size: 1.5 em;
+    margin-top: 1em;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    float: left;
+    width: 15%;
+    padding: 2%;
+  }

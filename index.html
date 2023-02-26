@@ -19,12 +19,17 @@
 
     <body>
         <!--put your initial page content here-->
-        <h1>Inflation in Various Countries from the Years 1980-2020 (5 Year Intervals)</h1>
+        <h1>Consumer Inflation in Various Countries from the Years 1980-2020 (5 Year Intervals)</h1>
         <div id="map"></div>
         <div id="panel"></div>
-        <div id="legend"></div>
-        <!--you can also use this space for internal scripts;
-        place these within <script> tags-->
+        <div id="text">
+            <p>Click on a countries marker to see its inflation rate from a specific time between 1980 to 2020. Hit the forward or reverse button to change the year.</p>
+            <p>Inflation is 
+                <a href="https://www.investopedia.com/terms/i/inflation.asp" target="_blank">defined</a> 
+                as a general increase in prices and fall in the purchasing value of money. Inflation is measured by the consumer price index (CPI), which is a measure of the average change over time in the prices paid by urban consumers for a market basket of consumer goods and services. Inflation is a persistent increase in the general level of prices for goods and services in an economy over a period of time. When the general price level rises, each unit of currency buys fewer goods and services; consequently, inflation reflects a reduction in the purchasing power per unit of money – a loss of real value in the medium of exchange and unit of account within the economy.
+            </p>
+        <div id="data_source">
+            <p>Data Source: <a href="https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG" target="_blank">World Bank</a></p>
 
         <!--put your external script links here-->
         <script src="lib/leaflet/leaflet-src.js"></script>

@@ -224,6 +224,8 @@ function createSequenceControls(attributes) {
     document.querySelector("#year-display").textContent = "Year: " + year;
   }
 
+
+  
 //Step 7: Import GeoJSON data
 function getData(){
     //load the data
@@ -243,8 +245,6 @@ function getData(){
             createSequenceControls(attributes);
             //update year display for start page
             updateYearDisplay(attributes[0]);
-            //call function to create legend
-            createLegend(minValue, maxValue);
         })
 };
 
