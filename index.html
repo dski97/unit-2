@@ -8,6 +8,7 @@
         <!--put your external stylesheet links here-->
         <link rel="stylesheet" href="lib/leaflet/leaflet.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/leaflet-search.css">
         <!--[if IE<9]>
             <link rel="stylesheet" href="css/style.ie.css">
         <![endif]-->
@@ -20,7 +21,7 @@
         <!--put your initial page content here-->
         <h1>Consumer Inflation in Various Countries from the Years 1980-2020 (5 Year Intervals)</h1>
         <div id="map"></div>
-        <div id="panel"></div>
+        <div id="panel"></div>     
         <div id="text">
             <p>Click on a countries marker to see its inflation rate from a specific time between 1980 to 2020. Hit the forward or reverse button to change the year.</p>
             <p>Inflation is 
@@ -29,10 +30,13 @@
             </p>
         <div id="data_source">
             <p>Data Source: <a href="https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG" target="_blank">World Bank</a></p>
+        </div>
+            
 
         <!--put your external script links here-->
         <script src="lib/leaflet/leaflet-src.js"></script>
         <script src="lib/leaflet-providers.js"></script>
+        <script src="lib/leaflet-search.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

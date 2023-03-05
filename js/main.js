@@ -151,8 +151,10 @@ function updatePropSymbols(attribute){
             popupContent += "<p><b>Inflation in " + year + ":</b> " + props[attribute] + "%</p>";
 
             //replace the layer popup
-            popup = layer.getPopup();
-            popup.setContent(popupContent).update();
+            if (popup = layer.getPopup()) {
+                var popup = layer.getPopup();
+                popup.setContent(popupContent).update();
+            }
         };
     });
 };
@@ -223,9 +225,30 @@ function createSequenceControls(attributes) {
     var year = attribute.split("_")[2];
     document.querySelector("#year-display").textContent = "Year: " + year;
   }
-
-
   
+  //add a search control
+  function addSearchControl(data) {
+    var searchControl = new L.Control.Search({
+        layer: L.geoJson(data, {
+            pointToLayer: function(feature, latlng) {
+                return L.circleMarker(latlng, {
+                    radius: 0, // set the radius to 0 to hide the blue markers
+                    fillOpacity: 0,
+                    opacity: 0
+                });
+            }
+        }),
+        propertyName: 'Country Name',
+        zoom: 6,
+        marker: false,
+        moveToLocation: function(latlng, title, map) {
+            map.setView(latlng, 6);
+        }
+    });
+    map.addControl(searchControl);
+}
+
+
 //Step 7: Import GeoJSON data
 function getData(){
     //load the data
@@ -238,13 +261,14 @@ function getData(){
             var attributes = processData(json);
             //calculate minimum data value
             minValue = calculateMinValue(json);
-
             //call function to create proportional symbols
             createPropSymbols(json, attributes);
             //call function to create sequence controls
             createSequenceControls(attributes);
             //update year display for start page
             updateYearDisplay(attributes[0]);
+            //add search control
+            addSearchControl(json);
         })
 };
 
