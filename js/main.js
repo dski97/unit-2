@@ -246,8 +246,68 @@ function createSequenceControls(attributes) {
         }
     });
     map.addControl(searchControl);
-}
+    }
 
+    //create static legend
+    function createLegend() {
+        var legend = L.control({ position: "bottomright" });
+      
+        legend.onAdd = function (map) {
+          var div = L.DomUtil.create("div", "legend"),
+            grades = [2, 10, 20],
+            labels = [];
+      
+          // add legend title
+          div.innerHTML += "<h4>Inflation (%)</h4>";
+      
+          // create container for legend circles and labels
+          var container = L.DomUtil.create("div", "legend-container");
+          div.appendChild(container);
+      
+          // loop through the inflation values and create a circle for each one
+          for (var i = 0; i < grades.length; i++) {
+            var radius = calcPropRadius(grades[i]);
+      
+            // create circle and label container
+            var circleContainer = L.DomUtil.create("div", "circle-container");
+            container.appendChild(circleContainer);
+      
+            // create circle
+            var circle = L.DomUtil.create("div", "circle", circleContainer);
+            circle.style.backgroundColor = "#ff7800";
+            circle.style.opacity = "0.8";
+            circle.style.width = radius * 2 + "px";
+            circle.style.height = radius * 2 + "px";
+            circle.style.borderRadius = radius + "px";
+      
+            // create label
+            var label = L.DomUtil.create("span", "label", circleContainer);
+            label.innerHTML = grades[i] + "%";
+            label.style.lineHeight = radius * 2 + "px";
+          }
+      
+          // add legend border and fill
+          div.style.padding = "8px";
+          div.style.backgroundColor = "white";
+          div.style.border = "1px solid #999";
+      
+          return div;
+        };
+      
+        legend.addTo(map);
+      }
+    //create info box for explaining inflation percentages
+    function createInfoBox() {
+        var infoBox = L.control({position: 'topright'});
+    
+        infoBox.onAdd = function (map) {
+            var div = L.DomUtil.create('div', 'info-box');
+            div.innerHTML = '<div style="background-color: white; padding: 8px;">Proportional Symbols Tip: Negative inflation percentages are assigned the value 1. Inflation percentages over 1000 are assigned the value 750.</div>';
+            return div;
+        };
+    
+        infoBox.addTo(map);
+    }
 
 //Step 7: Import GeoJSON data
 function getData(){
@@ -269,6 +329,10 @@ function getData(){
             updateYearDisplay(attributes[0]);
             //add search control
             addSearchControl(json);
+            //create legend
+            createLegend(json);
+            //create info box
+            createInfoBox();
         })
 };
 
